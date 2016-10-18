@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle reproduce-apm-beta-install-fail'
+      'command': 'reproduce-apm-beta-install-fail:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'reproduce-apm-beta-install-fail'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'reproduce-apm-beta-install-fail:toggle'
+        }
+      ]
+    ]
+  }
+]
